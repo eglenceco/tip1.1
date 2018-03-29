@@ -106,11 +106,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
                 else
                 {
-                    $sql6="INSERT INTO report (date, name, id, sales, tip, cash, declared)
+                    $sql5="INSERT INTO report (date, name, id, sales, tip, cash, declared)
                     VALUES
                         ('$datetime','$name', $id, $sales, $total_tip, $busboy_oncard, $busboy_plastic);";
                     
-                    $result6 = $conn->query($sql6);
+                    $result5 = $conn->query($sql5);
 
                 echo'<td>' .$busboy_oncard.'</td>';
                 echo'<td>' .$busboy_plastic.'</td>';
